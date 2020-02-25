@@ -30,7 +30,7 @@ class Course(models.Model):
         ordering = ['-created']
 
     def __str__(self):
-        return '{}. {}'.format(self.order, self.title)
+        return '{}'.format(self.title)
 
 
 class Module(models.Model):
